@@ -4,7 +4,7 @@ import './Main.css';
 
 export default function Main() {
   const { pokemon } = usePokemon();
-  console.log(pokemon);
+  // console.log(pokemon);
   return (
     <div>
       {pokemon.map((poke) => (
