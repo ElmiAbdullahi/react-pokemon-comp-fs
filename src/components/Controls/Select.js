@@ -1,6 +1,6 @@
-export default function Select({ types }) {
+export default function Select({ types, handleTypeChange }) {
   return (
-    <select>
+    <select onChange={(event) => handleTypeChange(event.target.value)}>
       {types.map(({ type }) => (
         <option key={type} value={type}>
           {type}
