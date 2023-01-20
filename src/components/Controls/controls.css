@@ -1,0 +1,15 @@
+.controls {
+  background-color: var(--color3);
+  height: 40px;
+  margin-top: -40px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.controls select {
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}

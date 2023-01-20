@@ -10,6 +10,14 @@
   background-position: left top, left bottom, right top, right bottom;
   animation: rotate 1s linear infinite;
 }
+
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
 @keyframes rotate {
   0% {
     width: 64px;
