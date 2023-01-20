@@ -2,20 +2,16 @@
   width: 64px;
   height: 64px;
   position: relative;
-  background-image: linear-gradient(#fff 16px, transparent 0),
+  background-image: linear-gradient(#ce6c47 16px, transparent 0),
+    linear-gradient(#ffd046 16px, transparent 0), linear-gradient(#ffd046 16px, transparent 0),
+    linear-gradient(#ce6c47 16px, transparent 0);
+  /* background-image: linear-gradient(#fff 16px, transparent 0),
     linear-gradient(#ff3d00 16px, transparent 0), linear-gradient(#ff3d00 16px, transparent 0),
-    linear-gradient(#fff 16px, transparent 0);
+    linear-gradient(#fff 16px, transparent 0); */
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: left top, left bottom, right top, right bottom;
   animation: rotate 1s linear infinite;
-}
-
-.display {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 100px;
 }
 
 @keyframes rotate {
@@ -34,4 +30,11 @@
     height: 64px;
     transform: rotate(360deg);
   }
+}
+
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
 }

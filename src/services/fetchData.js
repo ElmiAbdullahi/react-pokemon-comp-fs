@@ -1,7 +1,7 @@
 export async function fetchInitialPokemon() {
-  const resp = await fetch('https://alchemy-pokedex.herokuapp.com/api/pokedex?perPage=10');
+  const resp = await fetch('https://alchemy-pokedex.herokuapp.com/api/pokedex/');
   const data = await resp.json();
-  // console.log(data);
+  console.log(data);
   return data.results;
 }
 
@@ -16,8 +16,10 @@ export async function fetchPokemonByType(type) {
   params.set('type', type);
   if (type === 'all') params.delete('type');
   const resp = await fetch(
-    `https://alchemy-pokedex.herokuapp.com/api/pokedex/?${params.toString()}&perPage=10`
+    `https://alchemy-pokedex.herokuapp.com/api/pokedex/?${params.toString()}`
   );
   const data = await resp.json();
   return data.results;
 }
+
+// species_id = pokedex number

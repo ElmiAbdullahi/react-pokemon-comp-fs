@@ -22,8 +22,8 @@ export default function Main() {
         {pokemon.map((pokemon) => (
           <PokeCard key={pokemon._id} {...pokemon} />
         ))}
-        <p style={{ color: 'red', fontWeight: '700' }}>{error}</p>
       </div>
+      <p style={{ color: 'red', fontWeight: '700' }}>{error}</p>
     </>
   );
 }
