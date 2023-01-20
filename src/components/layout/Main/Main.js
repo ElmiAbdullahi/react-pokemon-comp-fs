@@ -5,9 +5,16 @@ import './Main.css';
 import PokeCard from '../../PokeCard/PokeCard.js';
 
 export default function Main() {
-  const { pokemon, types, handleTypeChange } = usePokemon();
+  const { pokemon, types, handleTypeChange, error, isLoading } = usePokemon();
 
-  // console.log(filtered);
+  if (isLoading && !error) {
+    return (
+      <section>
+        <p className="loader"></p>
+      </section>
+    );
+  }
+
   return (
     <>
       <Select types={types} handleTypeChange={handleTypeChange} />
@@ -15,6 +22,7 @@ export default function Main() {
         {pokemon.map((pokemon) => (
           <PokeCard key={pokemon._id} {...pokemon} />
         ))}
+        <p style={{ color: 'red', fontWeight: '700' }}>{error}</p>
       </div>
     </>
   );
