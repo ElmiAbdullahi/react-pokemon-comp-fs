@@ -20,8 +20,8 @@ export default function usePokemon() {
     };
     fetchData();
   }, []);
-  const handleTypeChange = async (type) => {
-    const data = await fetchPokemonByType(type);
+  const handleTypeChange = async (pokemon) => {
+    const data = await fetchPokemonByType(pokemon);
     setPokemon(data);
   };
   return { pokemon, types, handleTypeChange };
