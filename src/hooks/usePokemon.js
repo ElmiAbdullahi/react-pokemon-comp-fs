@@ -24,9 +24,13 @@ export default function usePokemon() {
 
   const handleSearch = async () => {
     setIsLoading(true);
-    const data = await fetchPokemon(selectedType, query);
-    setPokemon(data);
-    setIsLoading(false);
+    try {
+      const data = await fetchPokemon(selectedType, query);
+      setPokemon(data);
+      setIsLoading(false);
+    } catch (error) {
+      setError('Oops! Something went wrong');
+    }
   };
 
   return {

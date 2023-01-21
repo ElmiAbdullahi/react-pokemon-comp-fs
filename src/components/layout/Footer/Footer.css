@@ -1,7 +1,9 @@
 .footer {
   background-color: var(--color3);
+  /* border-top: var(--color2) solid 2px; */
   bottom: 0;
   color: var(--color5);
+  cursor: default;
   display: flex;
   font-size: 1.5em;
   font-weight: 700;

@@ -2,6 +2,7 @@
   align-items: center;
   background-color: var(--color3);
   color: var(--color5);
+  cursor: default;
   display: flex;
   font-size: 2em;
   font-weight: 700;
@@ -11,4 +12,5 @@
   text-transform: uppercase;
   top: 0;
   width: 100%;
+  z-index: 1;
 }

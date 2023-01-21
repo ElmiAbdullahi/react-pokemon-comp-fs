@@ -18,9 +18,11 @@ export default function PokeCard({
     <div className="poke-card">
       <div className="card-header">
         <span className="name">{pokebase}</span>
-        <span>{hp} HP</span>
+        <span className="hp">{hp} HP</span>
       </div>
-      <img src={url_image} />
+      <div className="img-container ">
+        <img src={url_image} className="hvr-grow-rotate" />
+      </div>
       <div className="physical-stats">
         <span>{type_1} Pokemon. </span>
         <span>Length: {height}ft, </span>

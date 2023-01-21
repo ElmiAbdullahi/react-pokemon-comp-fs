@@ -8,7 +8,9 @@ export default function PokemonDisplay({ pokemon, isLoading, error }) {
       {pokemon.map((pokemon) => (
         <PokeCard key={pokemon._id} {...pokemon} />
       ))}
-      <p style={{ color: 'red', fontWeight: '700' }}>{error}</p>
+      <p className="error" style={{ color: 'red', fontWeight: '700' }}>
+        {error}
+      </p>
     </div>
   );
 }
