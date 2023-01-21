@@ -2,10 +2,13 @@ import React from 'react';
 import usePokemon from '../../../hooks/usePokemon.js';
 import Select from '../../Controls/Select';
 import './Main.css';
+import '../../Controls/controls.css';
 import PokeCard from '../../PokeCard/PokeCard.js';
+import Query from '../../Controls/Query.js';
 
 export default function Main() {
-  const { pokemon, types, handleTypeChange, error, isLoading } = usePokemon();
+  const { pokemon, types, handleTypeChange, error, isLoading, handleSearch, query, setQuery } =
+    usePokemon();
 
   if (isLoading && !error) {
     return (
@@ -17,7 +20,10 @@ export default function Main() {
 
   return (
     <>
-      <Select types={types} handleTypeChange={handleTypeChange} />
+      <div className="controls">
+        <Select types={types} handleTypeChange={handleTypeChange} />
+        <Query {...{ handleSearch, query, setQuery }} />
+      </div>
       <div className="display">
         {pokemon.map((pokemon) => (
           <PokeCard key={pokemon._id} {...pokemon} />

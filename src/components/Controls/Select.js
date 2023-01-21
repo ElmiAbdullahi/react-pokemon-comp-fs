@@ -2,7 +2,7 @@ import './controls.css';
 
 export default function Select({ types, handleTypeChange }) {
   return (
-    <div className="controls">
+    <div>
       <select onChange={(event) => handleTypeChange(event.target.value)}>
         <option value="all">All</option>
         {types.map(({ type }) => (

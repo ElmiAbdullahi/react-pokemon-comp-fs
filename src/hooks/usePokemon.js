@@ -6,6 +6,7 @@ export default function usePokemon() {
   const [types, setTypes] = useState([]);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [query, setQuery] = useState('');
 
   useEffect(() => {
     setIsLoading(true);
@@ -40,5 +41,12 @@ export default function usePokemon() {
     setPokemon(data);
   };
 
-  return { pokemon, types, handleTypeChange, error, isLoading };
+  const handleSearch = async () => {
+    setIsLoading(true);
+    const data = await fetchPokemonByType(types, query);
+    setPokemon(data);
+    setIsLoading(false);
+  };
+
+  return { pokemon, types, handleTypeChange, error, isLoading, handleSearch, query, setQuery };
 }

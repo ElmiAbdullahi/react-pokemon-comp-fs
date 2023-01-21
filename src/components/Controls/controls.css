@@ -7,7 +7,8 @@
   width: 100%;
 }
 
-.controls select {
+.controls select,
+input {
   border: none;
   border-radius: 5px;
   margin-left: 5px;
