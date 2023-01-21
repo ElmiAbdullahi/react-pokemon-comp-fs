@@ -6,6 +6,7 @@ body {
   --color3: #ce6b47f8;
   --color4: #ffd046;
   --color5: #eadaa2;
+  --color6: #f69d3c;
   background-color: var(--color1);
   color: var(--color5);
   font-family: 'Oswald', sans-serif;

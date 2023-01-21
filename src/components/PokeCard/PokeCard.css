@@ -1,6 +1,6 @@
 .poke-card {
   background-color: var(--color5);
-  border: var(--color4) solid 10px;
+  border: var(--color4) solid 15px;
   border-radius: 10px;
   color: var(--color1);
   cursor: default;
@@ -13,10 +13,13 @@
 }
 .name {
   font-weight: 700;
+  text-transform: capitalize;
 }
 
 .poke-card img {
-  width: 190px;
+  height: 160px;
+  /* width: 190px; */
+  /* border: var(--color4) solid 5px; */
 }
 
 .card-header {
@@ -25,10 +28,10 @@
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 20px;
-  text-transform: capitalize;
 }
 
 .physical-stats {
+  background-color: var(--color6);
   display: flex;
   font-size: 0.8em;
   justify-content: space-evenly;
@@ -37,9 +40,30 @@
   text-transform: capitalize;
 }
 
+.abilities {
+  font-weight: 700;
+  height: 150px;
+  text-transform: capitalize;
+}
+
 .card-footer {
   display: flex;
+  font-size: 0.8em;
+
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid black;
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+div {
+  /* border: 1px red solid; */
 }

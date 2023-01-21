@@ -10,6 +10,9 @@ export default function PokeCard({
   weight,
   type_1,
   species_id,
+  ability_1,
+  ability_2,
+  ability_hidden,
 }) {
   return (
     <div className="poke-card">
@@ -23,9 +26,16 @@ export default function PokeCard({
         <span>Length: {height}ft, </span>
         <span>Weight: {weight}lbs.</span>
       </div>
+      <div className="abilities">
+        <p>{ability_1}</p>
+        <hr />
+        <p>{ability_2}</p>
+        <hr />
+        <p>{ability_hidden}</p>
+      </div>
       <div className="card-footer">
-        <span className="stat">Attack: {attack}</span>
-        <span className="stat">Defense: {defense}</span>
+        <span>Attack: {attack}</span>
+        <span>Defense: {defense}</span>
         <span>{species_id}/801</span>
       </div>
     </div>
