@@ -26,3 +26,4 @@ export async function fetchPokemon(type, query) {
 }
 
 // species_id = pokedex number
+// replace NA with ""
