@@ -15,7 +15,6 @@ export default function Select({ types, setIsLoading, setSelectedType, setPokemo
   };
 
   return (
-    // <div className="controls select">
     <select onChange={(event) => handleTypeChange(event.target.value)}>
       <option value="all">all</option>
       {types.map(({ type }) => (
@@ -24,6 +23,5 @@ export default function Select({ types, setIsLoading, setSelectedType, setPokemo
         </option>
       ))}
     </select>
-    // </div>
   );
 }

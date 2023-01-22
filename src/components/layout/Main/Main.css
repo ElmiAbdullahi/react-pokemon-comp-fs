@@ -1,36 +1,3 @@
-.loader {
-  width: 64px;
-  height: 64px;
-  position: relative;
-  background-image: linear-gradient(#ce6c47 16px, transparent 0),
-    linear-gradient(#ffd046 16px, transparent 0), linear-gradient(#ffd046 16px, transparent 0),
-    linear-gradient(#ce6c47 16px, transparent 0);
-  background-repeat: no-repeat;
-  background-size: 16px 16px;
-  background-position: left top, left bottom, right top, right bottom;
-  animation: rotate 1s linear infinite;
-  display: flex;
-  justify-content: center;
-}
-
-@keyframes rotate {
-  0% {
-    width: 64px;
-    height: 64px;
-    transform: rotate(0deg);
-  }
-  50% {
-    width: 30px;
-    height: 30px;
-    transform: rotate(180deg);
-  }
-  100% {
-    width: 64px;
-    height: 64px;
-    transform: rotate(360deg);
-  }
-}
-
 .display {
   display: flex;
   flex-wrap: wrap;
@@ -43,4 +10,46 @@
   align-self: center;
   color: red;
   font-weight: 700;
+}
+
+.poke {
+  display: block;
+  margin: 350px auto 0 auto;
+  width: 80px;
+  height: 80px;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  border-radius: 100%;
+  border: solid #37474f 2px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/261948/pokeball.png);
+  background-size: contain;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
 }

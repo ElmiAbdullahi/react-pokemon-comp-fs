@@ -2,7 +2,12 @@ import '../layout/Main/Main.css';
 import PokeCard from '../PokeCard/PokeCard';
 
 export default function PokemonDisplay({ pokemon, isLoading, error }) {
-  if (isLoading && !error) return <p className="loader"></p>;
+  if (isLoading && !error)
+    return (
+      <div className="stage">
+        <div className="poke bounce"></div>
+      </div>
+    );
   return (
     <div className="display">
       {pokemon.map((pokemon) => (

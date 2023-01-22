@@ -2,9 +2,6 @@
   background-color: var(--color5);
   border: var(--color4) solid 15px;
   border-radius: 15px;
-  /* box-shadow: 0px 0px 43px 11px rgba(0, 0, 0, 1) inset;
-  -webkit-box-shadow: 0px 0px 43px 11px rgba(0, 0, 0, 1) inset;
-  -moz-box-shadow: 0px 0px 43px 11px rgba(0, 0, 0, 1) inset; */
   color: var(--color1);
   cursor: default;
   height: 400px;
@@ -51,7 +48,6 @@
   justify-content: space-evenly;
   margin: 0px 30px -7px 30px;
   text-transform: capitalize;
-  /* background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c); */
   background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728);
 }
 
@@ -81,7 +77,7 @@ hr {
   margin: 0.5em 0;
 }
 
-/* .hvr-grow-shadow {
+.hvr-grow-shadow {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -96,9 +92,9 @@ hr {
 .hvr-grow-shadow:focus,
 .hvr-grow-shadow:active {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-} */
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+}
 
 .hvr-grow-rotate {
   display: inline-block;

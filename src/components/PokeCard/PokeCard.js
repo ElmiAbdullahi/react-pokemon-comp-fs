@@ -15,7 +15,7 @@ export default function PokeCard({
   ability_hidden,
 }) {
   return (
-    <div className="poke-card">
+    <div className="poke-card hvr-grow-shadow">
       <div className="card-header">
         <span className="name">{pokebase}</span>
         <span className="hp">{hp} HP</span>
