@@ -1,4 +1,5 @@
 import './PokeCard.css';
+import pokeBackground from '../../../src/mtn-bkgrd.jpeg';
 
 export default function PokeCard({
   url_image,
@@ -13,15 +14,22 @@ export default function PokeCard({
   ability_1,
   ability_2,
   ability_hidden,
+  pokedex,
+  color_1,
 }) {
   return (
-    <div className="poke-card hvr-grow-shadow">
+    <div className="poke-card hvr-grow-shadow" style={{ background: color_1 }}>
       <div className="card-header">
         <span className="name">{pokebase}</span>
         <span className="hp">{hp} HP</span>
-      </div>
-      <div className="img-container ">
-        <img src={url_image} className="hvr-grow-rotate" />
+      </div>{' '}
+      <div
+        className="img-container"
+        style={{ background: `url(${pokeBackground})`, backgroundRepeat: 'no-repeat' }}
+      >
+        <a href={pokedex} target="_blank" rel="noreferrer">
+          <img src={url_image} className="hvr-grow-rotate" />
+        </a>
       </div>
       <div className="physical-stats">
         <span>{type_1} Pokemon. </span>
