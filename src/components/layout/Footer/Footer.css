@@ -1,0 +1,14 @@
+.footer {
+  background-color: var(--color3);
+  bottom: 0;
+  color: var(--color5);
+  cursor: default;
+  display: flex;
+  font-size: 1.5em;
+  font-weight: 700;
+  height: 40px;
+  justify-content: center;
+  position: fixed;
+  text-transform: uppercase;
+  width: 100%;
+}

@@ -1,0 +1,115 @@
+.poke-card {
+  background-color: var(--color5);
+  border: var(--color4) solid 15px;
+  border-radius: 15px;
+  color: var(--color1);
+  cursor: default;
+  height: 400px;
+  margin: 30px 10px 10px 10px;
+  padding: 5px;
+  text-align: center;
+  width: 290px;
+}
+
+.name {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.hp {
+  color: var(--color2);
+}
+
+.poke-card img {
+  width: 180px;
+}
+
+.img-container {
+  background-color: #cdb98c;
+  border-image: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c) 1;
+  border-style: solid;
+  border-width: 5px;
+  box-shadow: 11px 8px 32px 0px rgba(0, 0, 0, 0.93) inset;
+  -webkit-box-shadow: 11px 8px 32px 0px rgba(0, 0, 0, 0.93) inset;
+  -moz-box-shadow: 11px 8px 32px 0px rgba(0, 0, 0, 0.93) inset;
+  margin: 0 10px 5px 10px;
+}
+
+.card-header {
+  display: flex;
+  font-size: 1.5em;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.physical-stats {
+  display: flex;
+  font-size: 0.7em;
+  justify-content: space-evenly;
+  margin: 0px 30px -7px 30px;
+  text-transform: capitalize;
+  background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728);
+}
+
+.abilities {
+  font-weight: 700;
+  height: 140px;
+  margin: 20px 0 -13px 0;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+p {
+  margin: 0;
+}
+
+.card-footer {
+  display: flex;
+  font-size: 0.6em;
+  justify-content: space-between;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--color1);
+  display: block;
+  height: 1px;
+  margin: 0.5em 0;
+}
+
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+.hvr-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow-rotate:hover,
+.hvr-grow-rotate:focus,
+.hvr-grow-rotate:active {
+  -webkit-transform: scale(1.7) rotate(4deg);
+  transform: scale(1.7) rotate(4deg);
+}
